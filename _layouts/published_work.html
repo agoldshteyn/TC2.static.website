@@ -9,7 +9,7 @@ layout: default
         <!-- grid item boxes -->
         {% for book in site.books %}
         <div class= "grid-item">
-          <img class="work-img" src="/assets/{{book.img}}" alt="{{book.name}}">
+          <img class="work-img" src="{{site.baseurl}}/assets/{{book.img}}" alt="{{book.name}}">
         </div>
 
         {% endfor %}
@@ -24,7 +24,7 @@ layout: default
           <div class="grid-container">
             {% for story in series.items %}
             <div class= "grid-item">
-              <img class= "work-img" src="/assets/{{story.img}}" alt="{{story.name}}">
+              <img class= "work-img" src="{{site.baseurl}}/assets/{{story.img}}" alt="{{story.name}}">
             </div>
 
             {% endfor %}

@@ -12,11 +12,11 @@
       {% for p in np %}
         {% if p.name == page.name %}
           <div class="site-nav-selected">
-            <li><a href="{{p.url}}" >{{p.title}}</a></li>
+            <li><a href="{{p.url | relative_url}}" >{{p.title}}</a></li>
           </div>
         {% else %}
           <div class="site-nav-notselected">
-            <li><a href="{{p.url}}" >{{p.title}}</a></li>
+            <li><a href="{{p.url | relative_url}}" >{{p.title}}</a></li>
           </div>
         {% endif %}
       {% endfor %}
