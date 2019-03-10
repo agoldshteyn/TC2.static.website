@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<!-- images -->
+<!-- main box -->
+<div class= "ws-img-div">
+  <div class="ws-grid-container">
+
+    <ul>
+
+    {% for ws in site.workshops %}
+    <!-- make each item in list include 1 pic and 1 desc-->
+      <li style="list-style:none">
+
+        <div class="ws-card">
+
+          <div class= "ws-grid-item">
+            <img class="ws-img" src="/assets/{{ws.img}}" alt="{{ws.title}}">
+          </div>
+
+          <div class= "ws-word-grid-item">
+            <!--insert words-->
+            <div class="ws-word-title">{{ws.title}}</div>
+            <p>{{ws.meet}}</p>
+            <p>{{ws.time}}</p>
+            <p>{{ws.location}}</p>
+          </div>
+      </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  </div>
+</div>

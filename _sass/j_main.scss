@@ -1,0 +1,192 @@
+.site-header {
+  padding: 10px;
+  background: #FBFCFC;
+  color: #138D75 ;
+
+  text-align: center;
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.site-nav{
+  text-align: center;
+  color: #138D75;
+  font-size: 20px;
+  border:1px solid #138D75;
+  border-width:1px 0;
+}
+.site-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.site-nav li{
+  display: inline;
+}
+.site-nav a:link {
+  text-decoration: none;
+}
+.site-nav a:visited {
+  text-decoration: none;
+}
+.site-nav a:hover {
+  text-decoration: underline;
+}
+.site-nav a:active {
+  text-decoration: underline;
+}
+.site-nav-selected {
+  display: inline-block;
+}
+.site-nav-selected a{
+  display:inline-block;
+  padding:10px;
+  color: #138D75;
+  font-weight: bold;
+}
+.site-nav-notselected{
+  display: inline-block;
+}
+.site-nav-notselected a{
+  display:inline-block;
+  padding:10px;
+  color: #7B7D7D;
+}
+
+.works {
+  text-align: center;
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  font-style: normal;
+  color: #A04000  ;
+}
+
+.works h1{
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  font-style: normal;
+  color: black;
+}
+.works h2 {
+  text-align: center;
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  font-style: normal;
+  color: black;
+}
+
+.book_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 5vw);
+  grid-gap: 15px;
+  }
+.book_item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.grid-container {
+  display: inline-grid;
+  height: auto;
+  align-content: space-around;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  #background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  #background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+.work-img {
+  width:200px;
+  height:300px;
+}
+
+.ws-img-div{
+  text-align: center;
+}
+.ws-grid-container {
+  display: inline-grid;
+  height: auto;
+  align-content: space-around;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  #background-color: #2196F3;
+  padding: 10px;
+}
+
+.ws-grid-container ul {
+  list-style-type: none;
+}
+.ws-grid-container li {
+  padding: 40px;
+}
+
+.ws-grid-item {
+  #background-color: blue;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 30px;
+  float: left;
+}
+.ws-img {
+  width:250px;
+  height:250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ws-card{
+  width: 600px;
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  #display: inline-block;
+  background: #EAFAF1  ;
+  #border-style: solid;
+  #padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  display: flex;
+  align-items: center
+}
+.ws-word-grid-item{
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  font-style: normal;
+  vertical-align: top;
+  text-align: left;
+  height: 250px;
+}
+.ws-word-title {
+  font-family: 'NunitoSansExtralight', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.ws-word-grid-item p{
+  font-size: 15px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.bod{
+  background: #138D75;
+  margin: 70px;
+}
+.content{
+  background: white;
+}

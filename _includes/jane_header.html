@@ -1,0 +1,26 @@
+<header class="site-header">
+  <h1> {{site.title}} </h1>
+
+  <!-- use assign to find pages listed above in site.pages-->
+  {% for p in site.nav_pages %}
+    {% assign fp = site.pages | where: 'name', p %}
+    {% assign np = np | concat: fp %}
+  {% endfor %}
+
+  <nav class="site-nav">
+    <ul>
+      {% for p in np %}
+        {% if p.name == page.name %}
+          <div class="site-nav-selected">
+            <li><a href="{{p.url}}" >{{p.title}}</a></li>
+          </div>
+        {% else %}
+          <div class="site-nav-notselected">
+            <li><a href="{{p.url}}" >{{p.title}}</a></li>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+
+</header>

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<!-- main box -->
+<div class= "works">
+      <h1>Books</h1>
+      <!-- grid -->
+      <div class="grid-container">
+        <!-- grid item boxes -->
+        {% for book in site.books %}
+        <div class= "grid-item">
+          <img class="work-img" src="/assets/{{book.img}}" alt="{{book.name}}">
+        </div>
+
+        {% endfor %}
+      </div>
+
+      <br>
+      <h1>Short Stories</h1>
+        {% assign story_by_series = site.short_stories | group_by:"series" %}
+        {% for series in story_by_series %}
+        <div layout="text-align:center">
+          <h2>{{series.name}}</h2>
+          <div class="grid-container">
+            {% for story in series.items %}
+            <div class= "grid-item">
+              <img class= "work-img" src="/assets/{{story.img}}" alt="{{story.name}}">
+            </div>
+
+            {% endfor %}
+
+          </div>
+          </div>
+        {% endfor %}
+
+      <br>
+</div>

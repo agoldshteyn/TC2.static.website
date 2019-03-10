@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<!-- images -->
+<!-- main box -->
+<div class= "works">
+  <div class="ws-grid-container">
+    <!-- grid item boxes -->
+    {% for ws in site.workshops %}
+      <div class= "ws-grid-item">
+        <img class="ws-img" src="/assets/{{ws.img}}" alt="{{ws.title}}">
+      </div>
+
+      <div class= "ws-word-grid-item">
+        <!--insert words-->
+        <h3>{{ws.title}}</h3>
+        <h5>{{ws.date}}</h5>
+        <h5>{{ws.time}}</h5>
+        <h5>{{ws.location}}</h5>
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
