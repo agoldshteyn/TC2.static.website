@@ -68,9 +68,12 @@ and liquid matter. That said, I got caught up in developing these grids that I
 did not have enough time to figure out how to make them change size when making
 the page window smaller. As a result, when the page window is relatively small,
 the grids step out of their usual position and overlap with the outer green
-background. I also wanted to include a link on below each book and
+background. I also wanted to include a link below each book and
 short story so that when the user clicked on it, they would be routed to Amazon
 to buy that book or short story, but I did not have enough time to implement this.
+Similarly, I also wanted to create an RSVP option on the bottom right corner of
+each workshop card to allow people to sign up, but did not have enought time to
+implement this.
 
 The navigation bar I created is more interactive. When the user hovers over a
 word, it becomes underlined and when they click a word, it changes color from grey
